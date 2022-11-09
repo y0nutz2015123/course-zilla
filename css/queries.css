@@ -1,0 +1,355 @@
+/* em and rem do NOT depend on html font-size in media queries! 
+Insted 1rem = 1em = 16px  */
+
+/* SMALLER DESKTOPS */
+
+/* 1350px / 16px = 84.375 (84em = 84 * 16 = 1344px) */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+}
+
+/* LANDSCAPE TABLETS */
+
+/* 1200px / 16px = 75 (75 * 16 = 1200px) */
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16 = 0.5625 (56.25%) */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.8rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .courses-form input {
+    width: 30%;
+  }
+
+  .testimonial-btn--right {
+    right: -12px;
+  }
+
+  .testimonial-text-box {
+    margin-right: -18rem;
+  }
+
+  .testimonial-img-box {
+    width: 75%;
+    justify-self: end;
+  }
+
+  .about-img-box {
+    width: 75%;
+  }
+
+  .about-img-box--1 {
+    justify-self: end;
+  }
+}
+
+/* TABLETS */
+
+/* 940px / 16px = 58.75 (59 * 16 = 944px) */
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16 = 0.5 (50%) */
+    font-size: 50%;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading-primary span {
+    z-index: -1;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 14rem;
+    gap: 4.8rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-statistics {
+    justify-content: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .courses-form input {
+    width: 45%;
+  }
+
+  .testimonial {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-btn,
+  .dots {
+    display: none;
+    pointer-events: none;
+  }
+
+  .testimonial-text-box {
+    width: 50%;
+    margin: 0;
+    justify-self: center;
+    order: 2;
+  }
+
+  .testimonial-img-box {
+    width: 35%;
+    justify-self: center;
+    margin-bottom: -7rem;
+  }
+
+  .about-img-box {
+    width: 85%;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    /* We need to add overflow-x hidden on the body and html for this to work , and i need .main-nav to
+    be positioned relative to the header, NOT to the body!!! */
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  /* if nav-open class exsist somewhere main-nav opacity will be 1 */
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/* SMALLER TABLETS */
+
+/* 700px / 16px = 43.75 (44em = 44 * 16 = 704px) */
+@media (max-width: 44em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .heading-secondary {
+    margin-bottom: 6.4rem;
+  }
+
+  .tag-btn {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+  }
+
+  .tag-icon {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+
+  .courses-tags {
+    gap: 0.8rem;
+  }
+
+  .hero-img {
+    width: 75%;
+  }
+
+  .courses-form input {
+    width: 65%;
+  }
+
+  .cta-heading {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 1.6rem;
+  }
+
+  .cta-description {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* PHONES */
+
+/* 550px / 16px = 34.375 (34em = 45 * 16 = 544px) */
+@media (max-width: 34em) {
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols,
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .heading-primary span::before {
+    height: 0;
+    width: 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .courses-tags {
+    display: none;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .about {
+    text-align: center;
+    gap: 3.2rem;
+  }
+
+  .about-img-box {
+    display: flex;
+    align-items: center;
+  }
+
+  .section-why {
+    padding: 12rem 0;
+  }
+
+  .why-us-img-box {
+    width: 100%;
+  }
+
+  .section-testimonials {
+    padding-bottom: 12rem;
+  }
+
+  .testimonial-img-box {
+    width: 85%;
+  }
+
+  .testimonial-text-box {
+    width: 75%;
+  }
+
+  .section-about {
+    padding-bottom: 12rem;
+  }
+
+  .section-cta {
+    padding-top: 0;
+  }
+
+  .about {
+    row-gap: 6.4rem;
+  }
+
+  .about-img-box--1 {
+    grid-row: 1 / 2;
+  }
+
+  .about-img-box {
+    justify-self: center;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    text-align: center;
+  }
+
+  .cta-heading {
+    font-size: 2rem;
+  }
+
+  .btn--cta {
+    margin-bottom: 4.8rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ––– 01 TYPOGRAPHY SYSTEM (px) –––    
+    -Font Size:
+      10/12/14/16/18/20/24/30/36/44/52/62/74/86/98
+    -Spacing:
+      2/4/8/12/16/24/32/48/64/80/96/128
+*/

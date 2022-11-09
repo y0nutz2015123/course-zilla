@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered food subscription that 
+      will make you eat healthy again, 365 days per year. 
+      It's tailored to your personal tastes and nutritional 
+      needs."
+    />
+
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>CourseZilla &mdash; Just choose the wanted course!</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" src="img/logo.png" alt="CourseZilla logo" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="#" class="main-nav-link">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="main-nav-link">About Us</a>
+          </li>
+          <li>
+            <a href="#why" class="main-nav-link">Why Us?</a>
+          </li>
+          <li>
+            <a href="#courses" class="main-nav-link">Courses</a>
+          </li>
+          <li>
+            <a href="#testimonials" class="main-nav-link">Testimonials</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Log In</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link nav-cta">Register</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero" id="hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary animation-fade-slide-left">
+              Learn from anywhere, and build your <span>bright career.</span>
+            </h1>
+            <p class="hero-description animation-fade-slide-left delay-06">
+              Our Platform will help you to learn from any part of the world,
+              all you need is motivation, just chose the wanted course, pay and
+              enjoy!
+            </p>
+
+            <a
+              href="#cta"
+              class="btn btn--full animation-fade-slide-left delay-08"
+            >
+              Get Started
+            </a>
+
+            <div class="hero-statistics animation-fade-slide-left delay-1">
+              <div class="hero-statistic">
+                <p class="statistic">83k +</p>
+                <p class="statistic-name">Courses</p>
+              </div>
+              <div class="hero-statistic">
+                <p class="statistic">980k +</p>
+                <p class="statistic-name">Students</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-img-box animation-fade-slide-right">
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.png" type="image/png" />
+              <img
+                class="hero-img"
+                src="img/hero-min.png"
+                alt="A man holding a laptop smiling."
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-courses animation-fade-slide-bottom" id="courses">
+        <div class="container text-center">
+          <h2
+            class="heading-secondary margin-bottom-md animation-fade-slide-left"
+          >
+            Browse our popular courses
+          </h2>
+          <form
+            role="search"
+            class="courses-form animation-fade-slide-right delay-06"
+          >
+            <input type="search" placeholder="Search" />
+            <button class="search-btn">
+              <ion-icon
+                class="search-btn-icon"
+                name="search-outline"
+              ></ion-icon>
+            </button>
+          </form>
+
+          <div class="courses-tags animation-fade-slide-left delay-08">
+            <button class="tag-btn tag-btn--full">
+              <ion-icon class="tag-icon" name="chevron-back-outline"></ion-icon>
+            </button>
+            <button class="tag-btn tag-btn--full">Developing</button>
+            <button class="tag-btn tag-btn--outline-1">UI/UX</button>
+            <button class="tag-btn tag-btn--outline-2">Business</button>
+            <button class="tag-btn tag-btn--outline-3">Marketing</button>
+            <button class="tag-btn tag-btn--outline-4">Technology</button>
+            <button class="tag-btn tag-btn--full">
+              <ion-icon
+                class="tag-icon"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="container grid grid--3-cols">
+          <div class="course">
+            <div class="course-img-box">
+              <img
+                src="img/courses/course-1.jpg"
+                alt="Become Certified JavaScript Web Developer Course Image"
+              />
+            </div>
+            <div class="course-text-box">
+              <header class="course-header">
+                <p class="course-time">7h 23m</p>
+                <button class="tag-btn tag-btn--full">Developing</button>
+              </header>
+              <h3 class="heading-tertiary margin-bottom-sm">
+                Become Certified JavaScript Web Developer
+              </h3>
+              <p class="course-description">
+                Complete coverage of HTML, CSS, Javascript while you Earn Four
+                Respected Certifications
+              </p>
+              <div class="course-info">
+                <div class="course-prices">
+                  <p class="course-price"><strong>$55.99</strong></p>
+                  <p class="course-price course-price--before">
+                    <strong>$59.99</strong>
+                  </p>
+                </div>
+                <div class="course-rating">
+                  <p class="rating-number"><strong>4.8</strong></p>
+                  <img src="img/stars.png" alt="stars" class="rating-stars" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="course-img-box">
+              <img
+                src="img/courses/course-2.jpg"
+                alt="100 Days of Code: The Complete Python Pro Course Image"
+              />
+            </div>
+            <div class="course-text-box">
+              <header class="course-header">
+                <p class="course-time">6h 33m</p>
+                <button class="tag-btn tag-btn--full">Developing</button>
+              </header>
+              <h3 class="heading-tertiary margin-bottom-sm">
+                100 Days of Code: The Complete Python Pro
+              </h3>
+              <p class="course-description">
+                Master Python by building 100 projects in 100 days. Learn data
+                science, automation, build websites,
+              </p>
+              <div class="course-info">
+                <div class="course-prices">
+                  <p class="course-price"><strong>$20.99</strong></p>
+                  <p class="course-price course-price--before">
+                    <strong>$30.99</strong>
+                  </p>
+                </div>
+                <div class="course-rating">
+                  <p class="rating-number"><strong>4.9</strong></p>
+                  <img src="img/stars.png" alt="stars" class="rating-stars" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="course-img-box">
+              <img
+                src="img/courses/course-3.jpg"
+                alt="Learn C# Programming (In Ten Easy Steps)
+                Course Image"
+              />
+            </div>
+            <div class="course-text-box">
+              <header class="course-header">
+                <p class="course-time">3h 11m</p>
+                <button class="tag-btn tag-btn--full">Developing</button>
+              </header>
+              <h3 class="heading-tertiary margin-bottom-sm">
+                Learn C# Programming (In Ten Easy Steps)
+              </h3>
+              <p class="course-description">
+                Understand the special features of C#: object orientation, the
+                .NET framework, error-handling.
+              </p>
+              <div class="course-info">
+                <div class="course-prices">
+                  <p class="course-price"><strong>$10.99</strong></p>
+                  <p class="course-price course-price--before">
+                    <strong>$14.99</strong>
+                  </p>
+                </div>
+                <div class="course-rating">
+                  <p class="rating-number"><strong>4.4</strong></p>
+                  <img src="img/stars.png" alt="stars" class="rating-stars" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="course-img-box">
+              <img
+                src="img/courses/course-4.jpg"
+                alt="The Complete 2020 Fullstack Web Developer Course Course Image"
+              />
+            </div>
+            <div class="course-text-box">
+              <header class="course-header">
+                <p class="course-time">9h 23m</p>
+                <button class="tag-btn tag-btn--full">Developing</button>
+              </header>
+              <h3 class="heading-tertiary margin-bottom-sm">
+                The Complete 2020 Fullstack Web Developer Course
+              </h3>
+              <p class="course-description">
+                Learn HTML5, CSS3, JavaScript, Python, Wagtail CMS, PHP & MySQL
+                from the scratch!
+              </p>
+              <div class="course-info">
+                <div class="course-prices">
+                  <p class="course-price"><strong>$34.99</strong></p>
+                  <p class="course-price course-price--before">
+                    <strong>$39.99</strong>
+                  </p>
+                </div>
+                <div class="course-rating">
+                  <p class="rating-number"><strong>4.7</strong></p>
+                  <img src="img/stars.png" alt="stars" class="rating-stars" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="course-img-box">
+              <img
+                src="img/courses/course-5.jpg"
+                alt="Node.js for Beginners - Become a Node js Developer Course Image"
+              />
+            </div>
+            <div class="course-text-box">
+              <header class="course-header">
+                <p class="course-time">6h 47m</p>
+                <button class="tag-btn tag-btn--full">Developing</button>
+              </header>
+              <h3 class="heading-tertiary margin-bottom-sm">
+                Node.js for Beginners - Become a Node js Developer
+              </h3>
+              <p class="course-description">
+                Build an Amazing CMS system - Using Express + MongoDB +
+                Bootstrap - Handlebars + Authentication + AJAX.
+              </p>
+              <div class="course-info">
+                <div class="course-prices">
+                  <p class="course-price"><strong>$29.99</strong></p>
+                  <p class="course-price course-price--before">
+                    <strong>$39.99</strong>
+                  </p>
+                </div>
+                <div class="course-rating">
+                  <p class="rating-number"><strong>4.8</strong></p>
+                  <img src="img/stars.png" alt="stars" class="rating-stars" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="course-img-box">
+              <img
+                src="img/courses/course-6.jpg"
+                alt="Java Programming covering Java 11 & Java 17 Course Image"
+              />
+            </div>
+            <div class="course-text-box">
+              <header class="course-header">
+                <p class="course-time">9h 23m</p>
+                <button class="tag-btn tag-btn--full">Developing</button>
+              </header>
+              <h3 class="heading-tertiary margin-bottom-sm">
+                Java Programming covering Java 11 & Java 17
+              </h3>
+              <p class="course-description">
+                Learn Java In This Course And Become a Computer Programmer.
+                Obtain valuable Core Java Skills.
+              </p>
+              <div class="course-info">
+                <div class="course-prices">
+                  <p class="course-price"><strong>$45.99</strong></p>
+                  <p class="course-price course-price--before">
+                    <strong>$55.99</strong>
+                  </p>
+                </div>
+                <div class="course-rating">
+                  <p class="rating-number"><strong>4.8</strong></p>
+                  <img src="img/stars.png" alt="stars" class="rating-stars" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="course-img-box">
+              <img
+                src="img/courses/course-7.jpg"
+                alt="Angular - The Complete Guide (2022 Edition)
+                Course Image"
+              />
+            </div>
+            <div class="course-text-box">
+              <header class="course-header">
+                <p class="course-time">7h 54m</p>
+                <button class="tag-btn tag-btn--full">Developing</button>
+              </header>
+              <h3 class="heading-tertiary margin-bottom-sm">
+                Angular - The Complete Guide (2022 Edition)
+              </h3>
+              <p class="course-description">
+                Master Angular 13 and build awesome, reactive web apps with the
+                successor of Angular.js .
+              </p>
+              <div class="course-info">
+                <div class="course-prices">
+                  <p class="course-price"><strong>$25.99</strong></p>
+                  <p class="course-price course-price--before">
+                    <strong>$35.99</strong>
+                  </p>
+                </div>
+                <div class="course-rating">
+                  <p class="rating-number"><strong>4.9</strong></p>
+                  <img src="img/stars.png" alt="stars" class="rating-stars" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="course-img-box">
+              <img
+                src="img/courses/course-8.jpg"
+                alt="iOS & Swift - The Complete iOS App Development Course Image"
+              />
+            </div>
+            <div class="course-text-box">
+              <header class="course-header">
+                <p class="course-time">7h 23m</p>
+                <button class="tag-btn tag-btn--full">Developing</button>
+              </header>
+              <h3 class="heading-tertiary margin-bottom-sm">
+                iOS & Swift - The Complete iOS App Development
+              </h3>
+              <p class="course-description">
+                From Beginner to iOS App Developer with Just One Course! Fully
+                Updated with a Comprehensive Module.
+              </p>
+              <div class="course-info">
+                <div class="course-prices">
+                  <p class="course-price"><strong>$39.99</strong></p>
+                  <p class="course-price course-price--before">
+                    <strong>$59.99</strong>
+                  </p>
+                </div>
+                <div class="course-rating">
+                  <p class="rating-number"><strong>5.0</strong></p>
+                  <img src="img/stars.png" alt="stars" class="rating-stars" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course">
+            <div class="course-img-box">
+              <img
+                src="img/courses/course-9.jpg"
+                alt="React - The Complete Guide (incl Hooks, React Router)
+                Course Image"
+              />
+            </div>
+            <div class="course-text-box">
+              <header class="course-header">
+                <p class="course-time">7h 23m</p>
+                <button class="tag-btn tag-btn--full">Developing</button>
+              </header>
+              <div class="course-text-box">
+                <h3 class="heading-tertiary margin-bottom-sm">
+                  React - The Complete Guide (incl Hooks, React Router)
+                </h3>
+                <p class="course-description">
+                  Dive in and learn React.js from scratch! Learn Reactjs, Hooks,
+                  Redux, React Routing, Animations, Next.js.
+                </p>
+                <div class="course-info">
+                  <div class="course-prices">
+                    <p class="course-price"><strong>$49.99</strong></p>
+                    <p class="course-price course-price--before">
+                      <strong>$59.99</strong>
+                    </p>
+                  </div>
+                  <div class="course-rating">
+                    <p class="rating-number"><strong>4.6</strong></p>
+                    <img src="img/stars.png" alt="stars" class="rating-stars" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="courses-pagination">
+            <button class="pagination-btn">
+              <ion-icon
+                class="pagination-icon"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </button>
+            <button class="pagination-btn">1</button>
+            <button class="pagination-btn pagination-btn--full">2</button>
+            <button class="pagination-btn">3</button>
+            <button class="pagination-btn">...</button>
+            <button class="pagination-btn">67</button>
+            <button class="pagination-btn">
+              <ion-icon
+                class="pagination-icon"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-why" id="why">
+        <div class="container text-center">
+          <span class="subheading animation-fade-slide-left">Why us</span>
+          <h2 class="heading-secondary animation-fade-slide-right delay-06">
+            Why you should choose us?
+          </h2>
+        </div>
+
+        <div class="container grid grid--3-cols">
+          <div class="why-us-feature animation-fade-slide-top">
+            <div class="why-us-img-box">
+              <img src="img/why us/why-us-1.jpg" alt="Why us img" />
+            </div>
+            <div class="why-us-text-box">
+              <h3 class="heading-tertiary margin-bottom-xs">
+                Learn at your pace
+              </h3>
+              <div class="why-us-description">
+                Courses for all levels cover technical skills, creative
+                tehniques, business strategies and more. We have collected.
+              </div>
+            </div>
+          </div>
+
+          <div class="why-us-feature animation-fade-slide-bottom">
+            <div class="why-us-img-box">
+              <img src="img/why us/why-us-2.jpg" alt="Why us img" />
+            </div>
+            <div class="why-us-text-box">
+              <h3 class="heading-tertiary margin-bottom-xs">Explore Courses</h3>
+              <div class="why-us-description">
+                Sign up and find out for yourself why so many people are taking
+                and recomanding this courses.
+              </div>
+            </div>
+          </div>
+
+          <div class="why-us-feature animation-fade-slide-top">
+            <div class="why-us-img-box">
+              <img src="img/why us/why-us-3.jpg" alt="Why us img" />
+            </div>
+            <div class="why-us-text-box">
+              <h3 class="heading-tertiary margin-bottom-xs">
+                Enroll in courses
+              </h3>
+              <div class="why-us-description">
+                Get unlimited access to 2.000 of top courses for your team.
+                Teach what you love. CourseZilla give you the tools.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-testimonials animation-fade-slide-bottom"
+        id="testimonials"
+      >
+        <div class="container text-center">
+          <span class="subheading animation-fade-slide-left">Testimonials</span>
+          <h2 class="heading-secondary animation-fade-slide-left delay-06">
+            Our students succes stories
+          </h2>
+        </div>
+
+        <div class="container">
+          <div class="testimonials">
+            <div class="testimonial">
+              <button class="testimonial-btn testimonial-btn--left">
+                <ion-icon
+                  class="testimonial-icon"
+                  name="chevron-back-outline"
+                ></ion-icon>
+              </button>
+              <button class="testimonial-btn testimonial-btn--right">
+                <ion-icon
+                  class="testimonial-icon"
+                  name="chevron-forward-outline"
+                ></ion-icon>
+              </button>
+              <div class="testimonial-text-box animation-fade-slide-left">
+                <div class="testimonial-rating">
+                  <img src="img/stars.png" alt="stars" />
+                </div>
+                <blockquote class="testimonial-text">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                  aliquam, purus sit amet luctus venenatis, lectus magna
+                  fringilla urna, porttitor rhon.”
+                </blockquote>
+                <p class="testimonial-name">&mdash; Courtney Henry</p>
+              </div>
+              <div
+                class="testimonial-img-box animation-fade-slide-right delay-06"
+              >
+                <img src="img/student.jpg" alt="student photo" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container margin-top-md">
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about" id="about">
+        <div class="container text-center">
+          <span class="subheading animation-fade-slide-left">About us</span>
+          <h2 class="heading-secondary animation-fade-slide-right delay-06">
+            Everything you need to know about us
+          </h2>
+        </div>
+
+        <div class="container">
+          <div class="about margin-bottom-lg animation-fade-slide-left">
+            <div class="about-text-box">
+              <h3 class="heading-tertiary">About CourseZilla</h3>
+              <p class="about-description">
+                Get ultimate access to 83.000+ of CourseZilla top courses for
+                your team. Learn and improve skills across businesses, tech,
+                design and more.
+              </p>
+              <a href="#" class="btn btn--full">See More</a>
+            </div>
+            <div class="about-img-box about-img-box--1">
+              <img src="img/about-us/about-us-1.jpg" alt="About us Image" />
+            </div>
+          </div>
+
+          <div class="about animation-fade-slide-right delay-06">
+            <div class="about-img-box">
+              <img src="img/about-us/about-us-2.jpg" alt="About us Image" />
+            </div>
+            <div class="about-text-box">
+              <h3 class="heading-tertiary">CourseZilla business</h3>
+              <p class="about-description">
+                Get ultimate access to 83.000+ of CourseZilla top courses for
+                your team. Learn and improve skills across businesses, tech,
+                design and more.
+              </p>
+              <a href="#" class="btn btn--full">See More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta animation-fade-slide-bottom" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <p class="cta-heading">
+                Take the next step toward your personal and profesional goal
+                with CourseZilla
+              </p>
+              <p class="cta-description">
+                Join now to recive, personalized recomandations from the full
+                CourseZilla catalogue.
+              </p>
+              <a href="#" class="btn btn--cta">Try For Free</a>
+            </div>
+            <div class="cta-img-box">
+              <img src="img/cta-img.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <img
+            src="img/footer-logo.png"
+            alt="footer logo"
+            class="logo margin-bottom-sm"
+          />
+          <div class="footer-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            purus sit amet luctus venenatis, lectus
+          </div>
+        </div>
+        <div class="nav-col">
+          <p class="footer-heading">Menu</p>
+          <ul class="footer-nav">
+            <li>
+              <a href="#" class="footer-link">Home</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Why Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Courses</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Stories</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-col">
+          <p class="footer-heading">Courses</p>
+          <ul class="footer-nav">
+            <li>
+              <a href="#" class="footer-link">UI/UX Designer</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Developing</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Business</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Marketing</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Technology</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-col">
+          <p class="footer-heading">Legal</p>
+          <ul class="footer-nav">
+            <li>
+              <a href="#" class="footer-link">Security</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Terms and Conditions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <span class="line"></span>
+        <p class="copyright">
+          Copyright &copy; 2022 - 2023 All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- ion icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- For safari smooth scroll -->
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <!-- Javascript -->
+    <script defer src="js/script.js"></script>
+  </body>
+</html>
